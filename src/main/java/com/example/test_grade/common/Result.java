@@ -3,10 +3,12 @@ package com.example.test_grade.common;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
 public class Result<T> {
     private int code; // 状态码
     private String message; // 结果描述信息
@@ -48,5 +50,9 @@ public class Result<T> {
     public Result(int code, String message) {
         this.code = code;
         this.message = message;
+    }
+
+    public boolean isSuccess() {
+        return code == 200;
     }
 }

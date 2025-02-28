@@ -11,16 +11,16 @@ public interface IStudentService {
     Base login(String name, String password);
 
     Student getStudentByName(String name);
-
-    Student getStudentById(Long id);
-
-    void updateStudent(Student student);
-
-    List<Student> getStudents();
-
-    void deleteStudentById(Long id);
-
-    List<Student> findStudentByName(String name);
-
-    List<Student> getStudentIdList(Long id);
+//
+//    Student getStudentById(Long id);
+//
+//    void updateStudent(Student student);
+//
+//    List<Student> getStudents();
+//
+//    void deleteStudentById(Long id);
+//
+//    List<Student> findStudentByName(String name);
+//
+//    List<Student> getStudentIdList(Long id);
 }

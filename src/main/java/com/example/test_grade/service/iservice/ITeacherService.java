@@ -8,20 +8,21 @@ import java.util.List;
 
 public interface ITeacherService {
     void register(Teacher teacher);
+    Base login(String name, String password);
     public Teacher getTeacherByName(String name);
 
-    Base login(String name, String password);
 
-    Teacher getTeacherById(Long id);
+//    Teacher getTeacherById(Long id);
 
-    void updateTeacher(Teacher teacher);
-
-    List<Teacher> getTeachers();
-
-    void deleteTeacherById(Long id);
-
-    List<Teacher> findTeacherByName(String name);
-
-    List<Teacher> getTeacherIdList(Long id);
+//
+//    void updateTeacher(Teacher teacher);
+//
+//    List<Teacher> getTeachers();
+//
+//    void deleteTeacherById(Long id);
+//
+//    List<Teacher> findTeacherByName(String name);
+//
+//    List<Teacher> getTeacherIdList(Long id);
 
 }

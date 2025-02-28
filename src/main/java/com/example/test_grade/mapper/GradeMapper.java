@@ -28,8 +28,6 @@ public interface GradeMapper {
     @Delete("delete from grade where studentId =#{studentId} and courseId=#{courseId}")
     void delete(@Param("studentId") Long studentId,@Param("courseId") Long courseId);
 
-    @Select("select * from education where teacherId=#{teacherId};")
-    Education getEducationByTeacherId(@Param("teacherId") Long teacherId);
 
     @Select("select * from grade where studentId=#{studentId} and courseId =#{courseId};")
     Grade getGrade(@Param("studentId") Long studentId,@Param("courseId") Long courseId);
